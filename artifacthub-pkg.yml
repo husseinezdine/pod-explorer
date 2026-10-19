@@ -1,0 +1,27 @@
+version: 0.3.0
+name: pod-explorer
+displayName: Pod Explorer
+createdAt: "2026-10-15T11:52:16Z"
+logoURL: "https://raw.githubusercontent.com/husseinezdine/pod-explorer/main/logo.svg"
+description: Browse, edit, create, copy and paste files inside running Kubernetes pods, right from the Pod page in Headlamp.
+keywords:
+  - files
+  - file-browser
+  - debugging
+  - exec
+license: Apache-2.0
+links:
+  - name: Source
+    url: https://github.com/husseinezdine/pod-explorer
+changes:
+  - kind: added
+    description: "File browser on the Pod details page (GNU and BusyBox images)"
+  - kind: added
+    description: "View and edit text files, create files and folders"
+  - kind: added
+    description: "Copy, cut and paste files and folders"
+annotations:
+  headlamp/plugin/archive-url: "https://github.com/husseinezdine/pod-explorer/releases/download/v0.3.0/pod-explorer-0.3.0.tar.gz"
+  headlamp/plugin/archive-checksum: "SHA256:4637572f373d6c5ce85f3a97e1d93dd75744adaf9acf8749302d9780749f40e7"
+  headlamp/plugin/version-compat: ">=0.22"
+  headlamp/plugin/distro-compat: in-cluster,web,docker-desktop,desktop
